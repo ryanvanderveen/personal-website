@@ -2,9 +2,12 @@
 <!--This website template was created by Ryan VanderVeen.-->
 <html lang="en">
 <head>
+	<link rel="stylesheet" href="css/styles.css">
 	<title>Forward Fitness Club</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@300&display=swap" 
+	rel="stylesheet">
 </head>
 
 <body>
@@ -13,17 +16,16 @@
 	
 	<!-- Use the header area for the website name or logo-->
 	<header>
-		<a href="learning-index.html"><img src="images/forward-fitness-logo.png" 
+		<a href="index.html"><img src="images/forward-fitness-logo.png" 
 		alt="Forward Fitness Club logo"></a>
 	</header>
-	
 	<!-- Use the nav area to add hyperlinks to other pages within the website -->
 	<nav>
 		<ul>
 			<li><a href="learning-index.html">Home</a></li>
 			<li><a href="learning-about.html">About Us</a></li>
-			<li><a href="classes.html">Classes</a></li> <!-- Not working yet -->
-			<li><a href="nutrition.html">Nutrition</a></li> <!-- Not working yet -->
+			<li><a href="learning-classes.html">Classes</a></li>
+			<li><a href="learning-nutrition.html">Nutrition</a></li>
 			<li><a href="learning-contact.html">Contact us</a></li>
 		</ul>
 	</nav>
@@ -35,12 +37,12 @@
 			<h1>Weights</h1>
 			
 			<img src="images/people-with-weights.jpg" alt="Two people working out 
-			with a weight in each hand">
+			with a weight in each hand" class="round">
 			
 			<p>Our facility includes a weight training area with several weight options.
 			Build lean muscle with weights and improve your core with weight training.</p>
 			
-			<ul>
+			<ul class="table-desktop">
 				<li>Dumbbells</li>
 				<li>Kettle bells</li>
 				<li>Barbells</li>
@@ -50,11 +52,10 @@
 		<div id="cardio">
 			
 			<h1>Cardio</h1>
-			<img class="equip" src="images/people-workingout-machines.jpg" 
-			alt="Cardio Equipment">
+			<img src="images/people-workingout-machines.jpg" alt="Cardio Equipment" class="round">
 			<p> Burn fat through cardio workouts. Experts recommend 150 minutes of 
 			cardio each week. We have several equipment choices for your workout.</p>
-			<ul>
+			<ul class="table-desktop">
 				<li>Treadmills</li>
 				<li>Elliptical Machines</li>
 				<li>Exercise Bikes</li>
@@ -65,11 +66,10 @@
 		<div id="training">
 			
 			<h1>Personal Training</h1>
-			<img class="equip" src="images/personal-trainer.jpg"
-			alt="Personal Training">
+			<img src="images/personal-trainer.jpg" alt="Personal Training" class="round">
 			<p> Our certified personal trainers work with you to help you obtain your 
 			fitness goals and track your progress. Personal training has many benefits.</p>
-			<ul>
+			<ul class="table-desktop">
 				<li>Accountability</li>
 				<li>Personalized Program</li>
 				<li>Consistent Support and Motivation</li>
@@ -77,7 +77,7 @@
 			
 		</div>
 		
-		<div id="exercises">
+		<div id="exercises" class="table-desktop">
 			
 			<h1>Common Exercises</h1>
 			<p>The following are common exercises that we encourage our clients to do as 
