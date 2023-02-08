@@ -197,7 +197,7 @@ footer p a {
 }
 
 /* Media Query for Tablet Viewport */
-@media screen and (min-width: 630px), print {
+@media screen and (min-width: 970px), print {
 
 	/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
 	.tablet-desktop {
@@ -288,7 +288,7 @@ footer p a {
 } /* End of Media Query for Tablet Viewport */
 
 /* Media Query for Desktop Viewport */
-@media screen and (min-width: 1015px), print {
+@media screen and (min-width: 1496px), print {
 	
 	/* Desktop Viewport: Style rule for header */
 	header {
