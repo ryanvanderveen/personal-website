@@ -1,11 +1,11 @@
 /*
 Author: Ryan VanderVeen
-Date: February 26, 2023
+Date: March 28, 2023
 File Name: styles.css
 */
 
 /* CSS Reset */
-* {
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, audio {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -30,6 +30,8 @@ img {
 
 /* Style rule for header */
 header {
+	position: -webkit-sticky;
+	position: sticky;
 	top: 0;
 	background-color: #AA875B;
 	height: auto;
@@ -91,7 +93,7 @@ nav li a {
 /* Style rules for main content*/
 main {
 	background-color: #d8c4aa;
-	text-align: center;
+	text-align: left;
 	padding: 2%;
 	font-size: 1.15em;
 	font-family: 'Open Sans', sans-serif;
@@ -112,7 +114,7 @@ main p {
 }
 
 main ul {
-	list-style-type: circle;
+	list-style-type: disc;
 	padding: 0.25%;
 }
 
@@ -137,13 +139,17 @@ main li {
 	display: block;
 }
 
-.classes, .positions {
+.classes, .positions, .extracurriculars-list, .languages, .projects, .hobbies {
 	margin-left: 2em;
 }
 
-#school, #work {
+ .languages, .projects, .hobbies {
+	 list-style-type: circle;
+ }
+
+#school, #work, #extracurriculars {
 	text-align: left;
-	margin: 0 3%
+	margin: 0 3%;
 }
 
 .round {
@@ -180,6 +186,54 @@ main li {
 
 .map {
 	display: none;
+}
+
+#form {
+	margin-top: 2%;
+	padding: 2%;
+}
+
+#form h2 {
+	text-align: center;
+}
+
+/* Style rules for form elements */
+fieldset, input, select, textarea {
+	border: 1px solid #000;
+}
+
+fieldset legend {
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+select { 
+	background-color: #fff;
+}
+
+textarea {
+	resize: none;
+	width: 100%;
+	height: 100%; 
+}
+
+label {
+	display: block;
+	padding-top: 1%;
+}
+
+form #submit, #reset {
+	margin: 2% auto 0 3%;;
+	display: inline-block;
+	border: none;
+	padding: 3% 3%;
+	background-color: #7C5523;
+	font-size: 1em;
+	border-radius: 10px;
+}
+
+form span {
+	color: #ff0000;
 }
 
 /* Style rules for footer content */
@@ -228,11 +282,8 @@ footer p a {
 	}
 	
 	/* Tablet Viewport: Style rules for main content area */
-	main {
-		text-align: left;
-	}
-	
 	section {
+		padding: 1.5%;
 		text-align: center;
 	}
 	
@@ -267,6 +318,44 @@ footer p a {
 		font-size: 1em;
 		padding: 10px;
 	}
+	
+	/* Tablet Viewport: Style rules for table */
+	table {
+		border: 2.5px solid #000;
+		border-collapse: collapse;
+		margin: 0 3%;
+		table-layout: fixed;
+		width: 90%;
+	}
+	
+	caption {
+		font-size: 1.5em;
+		font-weight: bold;
+		padding: 1%;
+	}
+	
+	th, td {
+		border: 2.5px solid #000;
+		padding: 2%;
+	}
+	
+	th {
+		background-color: #7C5523;
+		color: #000;
+		font-size: 1.15em;
+		text-align: center;
+	}
+	
+	tr {
+		background-color: #d8c4aa;
+	}
+	
+	/* Tablet Viewport: Style rule for form element */
+	form {
+		width: 80%;
+		margin: 0 auto;
+	}
+	
 } /* End of Media Query for Tablet Viewport */
 
 /* Media Query for Desktop Viewport */
@@ -304,6 +393,21 @@ footer p a {
 		padding: 10px;
 	}
 	
+	/* Desktop Viewport: Style rules for form elements */
+	form {
+		width: auto;
+	}
+	
+	.form-grid {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 20px;
+	}
+	
+	.project-information {
+		grid-column: 1 / span 3;
+	}
+	
 } /* End of Media Query for Desktop Viewport */
 	
 /* Media Query for Large Desktop Viewports */
@@ -312,6 +416,10 @@ footer p a {
 	#container {
 		width: 1920px;
 		margin: 0 auto;
+	}
+	
+	table {
+		width: 80%;
 	}
 	
 } /* End of Media Query for Large Desktop Viewport */

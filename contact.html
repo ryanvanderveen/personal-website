@@ -37,7 +37,7 @@
 			<li><a href="index.html">Home</a></li>
 			<li><a href="about.html">About Me</a></li>
 			<li><a href="career.html">Career</a></li>
-			<li><a href="/school-website/index.html">School Website</a></li>
+			<li><a href="work.html">Work</a></li>
 			<li><a href="contact.html" class="active">Contact</a></li>
 		</ul>
 	</nav>
@@ -53,6 +53,117 @@
 			
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2919.6717133373077!2d-85.89122908370612!3d42.96412207915109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8819a31f0c9d398f%3A0xea0367b3e0ec32fa!2sGrand%20Valley%20State%20University!5e0!3m2!1sen!2sus!4v1674273165224!5m2!1sen!2sus" 
 			width="600" height="450" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			
+		</div>
+		
+		<div id="form">
+			
+			<h2>Complete the form below.</h2>
+			
+			<form class="form-grid"><!-- Start Form -->
+			
+				<fieldset>
+					<legend>Your Information</legend>
+					<label for="fName">First Name: <span>*</span></label>
+					<input type="text" name="fName" id="fName" placeholder="First name" required>
+					
+					<label for="lName">Last Name: <span>*</span></label>
+					<input type="text" name="lName" id="lName" placeholder="Last name" required>
+					
+					<label for="email">Email: <span>*</span></label>
+					<input type="email" name="email" id="email" placeholder="Email" required>
+					
+					<label for="city">City:</label>
+					<input type="text" name="city" id="city" placeholder="City">
+					
+					<label for="state">State:</label>
+					<select name="state" id="state">
+						<option value="AL">Alabama</option>
+						<option value="AK">Alaska</option>
+						<option value="AZ">Arizona</option>
+						<option value="AR">Arkansas</option>
+						<option value="CA">California</option>
+						<option value="CO">Colorado</option>
+						<option value="CT">Connecticut</option>
+						<option value="DE">Delaware</option>
+						<option value="DC">District Of Columbia</option>
+						<option value="FL">Florida</option>
+						<option value="GA">Georgia</option>
+						<option value="HI">Hawaii</option>
+						<option value="ID">Idaho</option>
+						<option value="IL">Illinois</option>
+						<option value="IN">Indiana</option>
+						<option value="IA">Iowa</option>
+						<option value="KS">Kansas</option>
+						<option value="KY">Kentucky</option>
+						<option value="LA">Louisiana</option>
+						<option value="ME">Maine</option>
+						<option value="MD">Maryland</option>
+						<option value="MA">Massachusetts</option>
+						<option value="MI">Michigan</option>
+						<option value="MN">Minnesota</option>
+						<option value="MS">Mississippi</option>
+						<option value="MO">Missouri</option>
+						<option value="MT">Montana</option>
+						<option value="NE">Nebraska</option>
+						<option value="NV">Nevada</option>
+						<option value="NH">New Hampshire</option>
+						<option value="NJ">New Jersey</option>
+						<option value="NM">New Mexico</option>
+						<option value="NY">New York</option>
+						<option value="NC">North Carolina</option>
+						<option value="ND">North Dakota</option>
+						<option value="OH">Ohio</option>
+						<option value="OK">Oklahoma</option>
+						<option value="OR">Oregon</option>
+						<option value="PA">Pennsylvania</option>
+						<option value="RI">Rhode Island</option>
+						<option value="SC">South Carolina</option>
+						<option value="SD">South Dakota</option>
+						<option value="TN">Tennessee</option>
+						<option value="TX">Texas</option>
+						<option value="UT">Utah</option>
+						<option value="VT">Vermont</option>
+						<option value="VA">Virginia</option>
+						<option value="WA">Washington</option>
+						<option value="WV">West Virginia</option>
+						<option value="WI">Wisconsin</option>
+						<option value="WY">Wyoming</option>
+					</select>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Services Required</legend>
+					<label for="discordbot"><input type="checkbox" name="service" id="discordbot" value="Discord Bot">Discord Bot</label>
+					
+					<label for="webdesign"><input type="checkbox" name="service" id="webdesign" value="Web Design">Web Design</label>
+					
+					<label for="webdevelopment"><input type="checkbox" name="service" id="webdevelopment" value="Web Development">Web Development</label>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Time Frame</legend>
+					<label for="onemonth"><input type="radio" name="timeframe" id="onemonth" value="One Month">One Month</label>
+					
+					<label for="twomonths"><input type="radio" name="timeframe" id="twomonths" value="Two Months">Two Months</label>
+					
+					<label for="threemonths"><input type="radio" name="timeframe" id="threemonths" value="Three Months">Three Months</label>
+					
+					<label for="longer"><input type="radio" name="timeframe" id="longer" value="Longer">Longer</label>
+					
+				</fieldset>
+				
+				<fieldset class="project-information">
+					<legend>Project Information</legend>
+					<textarea id="projectinformation" name="projectinformation" rows="5" cols="35" placeholder="Please include information about the project you would like me to do."></textarea>
+				</fieldset>
+				
+				<div>
+					<input type="submit" id="submit" value ="Submit">
+					<input type="reset" id="reset" value="Reset">
+				</div>
+				
+			</form>
 			
 		</div>
 		
