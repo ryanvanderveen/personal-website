@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!-- Website created by Team 7: 3/23/2023 // Tickets by Sami Slezak -->
+<html lang='en'>
+<head>
+	<title>Allendale Adventure Park</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="scripts/script.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nobile&family=Roboto+Slab&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" sizes="512x512" href="images/android-chrome-512x512.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192x192.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+</head>
+<body>
+
+	<div id="container">
+		
+		<!-- Mobile Nav -->
+		<nav class="mobile-nav">
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<a href="tickets.html">Tickets</a>
+				<a href="courses.html">Courses</a>
+				<a href="rules.html">Rules</a>
+				<a href="events.html">Events</a>
+				<a href="gallery.html">Gallery</a>
+				<a href="shop.html">Shop</a>
+				<a href="contact.html">Contact Us</a>
+				<a href="reviews.html">Reviews</a>
+			</div>
+			<a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+		</nav>
+		
+	<!-- Company Logo -->
+	<header id="aap-logo">
+		<a href="index.html"><img src="images/Allendale_adventure_park_logo.png" 
+		alt="Allendale Adventure Park logo"></a>
+	</header>
+	
+	<!-- Tablet and Desktop Nav -->
+	<nav class="tablet-desktop">
+			<ul>
+				<li><a href="reviews.html">Reviews</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<!-- Dropdown Menu -->
+				<li class="dropdown">
+					<a href="#" class="dropbtn">About Us</a>
+					<div class="dropdown-content">
+						<a href="events.html">Events</a>
+						<a href="gallery.html">Gallery</a>
+						<a href="shop.html">Shop</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropbtn">Courses</a>
+					<div class="dropdown-content">
+						<a href="tickets.html">Tickets</a>
+						<a href="courses.html">Courses</a>
+						<a href="rules.html">Rules</a>
+					</div>
+				</li>
+				<li><a href="index.html" class="active">Home</a></li>
+			</ul>
+		</nav>
+		
+		<main>
+				<div class="tickets">
+					<h2 class="title">Pick Your Adventure</h2>
+					<div class="row">
+						<div class="col-3">
+							<img src="images/ropes-tickets.jpeg" alt="Person on ropes course">
+							<h3>Rope Courses</h3>
+							<p class="purchase-ticket-container">$25<a class="purchase-ticket-button" href="#">Purchase Ticket</a></p>
+							<p>Climb with confidence! We have three rope courses to choose from:</p>
+								<ul class="tablet-desktop">
+									<li>Beginner</li>
+									<li>Intermediate</li>
+									<li>Expert</li>
+								</ul>
+						</div>
+					
+						<div class="col-3">
+							<img src="images/zipline-tickets.jpeg" alt="People gliding on zipline">
+							<h3>Ziplines</h3>
+							<p class="purchase-ticket-container">$55<a class="purchase-ticket-button" href="#">Purchase Ticket</a></p>
+							<p>Get ready to glide! Prepare for racing speeds and exhilarating fun as you move through our three zipline courses, all ranging in different heights.</p>
+						</div>
+						
+						<div class="col-3">
+							<img src="images/rockwall-tickets.jpeg" alt="Woman climbing on rock wall">
+							<h3>Rock Walls</h3>
+							<p class="purchase-ticket-container">$55<a class="purchase-ticket-button" href="#">Purchase Ticket</a></p>
+							<p>Build your strength! Like our other courses, we have three different walls to climb on:</p>
+								<ul class="tablet-desktop">
+									<li>Beginner</li>
+									<li>Intermediate</li>
+									<li>Expert</li>
+								</ul>
+						</div>
+					</div>
+				</div>
+				
+			
+			<div id="form">
+				
+				<h2>Complete the form below to purchase birthday, group, and team tickets.</h2>
+				
+				<form class="form-grid"><!-- Start Form -->
+					
+					<fieldset>
+						<legend>Lead Participant Information</legend>
+						<label for="fName">First Name:</label>
+						<input type="text" name="fName" id="fName" required>
+						
+						<label for="1Name">Last Name:</label>
+						<input type="text" name="1Name" id="1Name" required>
+						
+						<label for="email">Email:</label>
+						<input type="email" name="email" id="email" required>
+						
+						<label for="phone">Phone:</label>
+						<input type="tel" id="phone" name="photo" required>
+						
+						<label for="number">Number of people participating:</label>
+						<input type="number" id="number" name="number" required>
+					</fieldset>
+					
+					<fieldset>
+						<legend>Group Information</legend>
+						<p>I am hosting a:</p>
+						
+						<label for="bdayprty"><input type="checkbox" name="interest" id="bdayprty" value="Birthday Party">Birthday Party</label>
+						
+						<label for="group"><input type="checkbox" name="interest" id="group" value="Group">Group</label>
+						
+						<label for="teambuild"><input type="checkbox" name="interest" id="teambuild" value="Team Building">Team Building</label>
+					</fieldset>
+					
+					<fieldset>
+						<legend>Course Choice</legend>
+						<label for="choice">Select the course your group will participate on:</label>
+						<select name="choice" id="choice">
+							<option value="ropes">Ropes</option>
+							<option value="ziplines">Ziplines</option>
+              <option value="rockwalls">Rock Walls</option>
+            </select>
+					</fieldset>
+					
+					<input type="submit" id="book" value="Book Tickets" class="btn">
+					
+				</form>
+				
+			</div>
+			
+		</main>
+		
+		<footer>
+			<p>&copy; Copyright 2023. All Rights Reserved.</p>
+			<p><a href="mailto:allendaleadventurepark@gmail.com">allendaleadventurepark@gmail.com</a></p>
+		</footer>
+		
+	</div>
+
+</body>
+</html>

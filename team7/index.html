@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!-- Website created by Team 7: Ryan VanderVeen 3/30/2023 -->
+<html lang="en">
+<head>
+	<title>Home | Allendale Adventure Park</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="scripts/script.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nobile&family=Roboto+Slab&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" sizes="512x512" href="images/android-chrome-512x512.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192x192.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+</head>
+<body>
+
+	<div id="container">
+	
+		<!-- Mobile Nav -->
+		<nav class="mobile-nav">
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<a href="tickets.html">Tickets</a>
+				<a href="courses.html">Courses</a>
+				<a href="rules.html">Rules</a>
+				<a href="events.html">Events</a>
+				<a href="gallery.html">Gallery</a>
+				<a href="shop.html">Shop</a>
+				<a href="contact.html">Contact Us</a>
+				<a href="reviews.html">Reviews</a>
+			</div>
+			<a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+		</nav>
+		
+	<!-- Company Logo -->
+	<header id="aap-logo">
+		<a href="index.html"><img src="images/Allendale_adventure_park_logo.png" 
+		alt="Allendale Adventure Park logo"></a>
+	</header>
+	
+	<!-- Tablet and Desktop Nav -->
+	<nav class="tablet-desktop">
+			<ul>
+				<li><a href="reviews.html">Reviews</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<!-- Dropdown Menu -->
+				<li class="dropdown">
+					<a href="#" class="dropbtn">About Us</a>
+					<div class="dropdown-content">
+						<a href="events.html">Events</a>
+						<a href="gallery.html">Gallery</a>
+						<a href="shop.html">Shop</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropbtn">Courses</a>
+					<div class="dropdown-content">
+						<a href="tickets.html">Tickets</a>
+						<a href="courses.html">Courses</a>
+						<a href="rules.html">Rules</a>
+					</div>
+				</li>
+				<li><a href="index.html" class="active">Home</a></li>
+			</ul>
+		</nav>
+		
+		<!-- Hero Image -->
+		<div id="hero" class="tablet-desktop">
+			<img src="images/hero-image.jpg" alt="girl doing high ropes course"> <!-- https://www.visit.alsace/wp-content/uploads/lei/pictures/231007952-forest-adventure-park-2-1600x900.jpg -->
+			<h2> Providing the Allendale Community with Adventure Since 2023</h2>
+			<a href="tickets.html"><span>Tickets</span></a>
+		</div>
+	
+		<main>
+			<div class="mobile">
+				<h2> Providing the Allendale community with adventure since 2023.</h2>
+				<p>Allendale Adventure Park is home to the best rope courses and ziplines in all of West Michigan! With multiple courses and activities, Allendale Adventure Park is the perfect place to test your limits and have fun as you adventure through the beautiful nature of Allendale.</p>
+				<p>With our rope and zipline courses, participants have the opportunity to climb and glide between trees in the Grand Ravines and along the Grand River! Participants can choose between many different adventures, with fun guaranteed!</p>
+				<h3>Allendale Adventure Park Hours</h3>
+				<p>Rope Courses: Everyday from 7am to 7pm</p>
+				<p>Ziplines: Everyday from 7am to 7pm</p>
+				<p>Rock Walls: Everyday from 7am to 7pm</p>
+				<a href="rules.html"><span>Rules</span></a>
+				<div>
+					<h2>Most Recent Review:</h2>
+					<div>
+						<h2>Zack S.</h2>
+						<h3>5/5 Stars</h3>
+						<p>Wonderful park. Very clean, fast lines, and GREAT food. Worth the money!</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="tablet-desktop">
+			
+				<section id="desc">
+					<!-- Description: -->
+					<h2>Description</h2>
+					<p>Allendale Adventure Park is home to the best rope courses and ziplines in all of West Michigan! With multiple courses and activities, Allendale Adventure Park is the perfect place to test your limits and have fun as you adventure through the beautiful nature of Allendale.</p>
+					<p>With our rope and zipline courses, participants have the opportunity to climb and glide between trees in the Grand Ravines and along the Grand River! Participants can choose between many different adventures, with fun guaranteed!</p>
+				</section>
+				
+				<div id="hours">
+					<table><!-- Start Table -->
+					<caption>Allendale Adventure Park Hours</caption>
+					<tr><!-- Row 1 -->
+						<th>Course</th>
+						<th>Days</th>
+						<th>Times</th>
+					</tr>
+					<tr><!-- Row 2 -->
+						<td>Rope Courses</td>
+						<td>Monday - Sunday</td>
+						<td>7:00am - 7:00pm</td>
+					</tr>
+					<tr><!-- Row 3 -->
+						<td>Ziplines</td>
+						<td>Monday - Sunday</td>
+						<td>7:00am - 7:00pm</td>
+					</tr>
+					<tr><!-- Row 4 -->
+						<td>Rock Walls</td>
+						<td>Monday - Sunday</td>
+						<td>7:00am - 7:00pm</td>
+					</tr>
+					</table><!-- End Table-->
+				</div>
+				
+				<section id="review">
+					<h2>Most Recent Review</h2>
+					<div>
+						<h2>Zack S.</h2>
+						<h3>5/5 Stars</h3>
+						<p>Wonderful park. Very clean, fast lines, and GREAT food. Worth the money!</p>
+					</div>
+				</section>
+				
+				<aside>
+					<h2>Safety Note:</h2>
+					<p>While adventure can be exhilarating, we believe the most fun comes when participants trust  in the safety of our courses. We have advanced safety systems in place, with inspection approved and secured cables and harnesses for our zipline and rope courses. We also provide approved padding for those climbing our rock walls.</p>
+				</aside>
+			</div>
+			
+		</main>
+		
+		<footer>
+			<p>&copy; Copyright 2023. All Rights Reserved.</p>
+			<p><a href="mailto:allendaleadventurepark@gmail.com">allendaleadventurepark@gmail.com</a></p>
+		</footer>
+		
+	</div>
+
+</body>
+</html>

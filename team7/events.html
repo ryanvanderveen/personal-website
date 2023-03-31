@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- Website created by Team 7: 3/23/2023 -->
+<html lang='en'>
+<head>
+	<title>Allendale Adventure Park</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="scripts/script.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nobile&family=Roboto+Slab&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" sizes="512x512" href="images/android-chrome-512x512.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192x192.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+</head>
+<body>
+
+	<div id="container">
+		
+		<!-- Mobile Nav -->
+		<nav class="mobile-nav">
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<a href="tickets.html">Tickets</a>
+				<a href="courses.html">Courses</a>
+				<a href="rules.html">Rules</a>
+				<a href="events.html">Events</a>
+				<a href="gallery.html">Gallery</a>
+				<a href="shop.html">Shop</a>
+				<a href="contact.html">Contact Us</a>
+				<a href="reviews.html">Reviews</a>
+			</div>
+			<a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+		</nav>
+		
+	<!-- Company Logo -->
+	<header id="aap-logo">
+		<a href="index.html"><img src="images/Allendale_adventure_park_logo.png" 
+		alt="Allendale Adventure Park logo"></a>
+	</header>
+	
+	<!-- Tablet and Desktop Nav -->
+	<nav class="tablet-desktop">
+			<ul>
+				<li><a href="reviews.html">Reviews</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<!-- Dropdown Menu -->
+				<li class="dropdown">
+					<a href="#" class="dropbtn">About Us</a>
+					<div class="dropdown-content">
+						<a href="events.html">Events</a>
+						<a href="gallery.html">Gallery</a>
+						<a href="shop.html">Shop</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropbtn">Courses</a>
+					<div class="dropdown-content">
+						<a href="tickets.html">Tickets</a>
+						<a href="courses.html">Courses</a>
+						<a href="rules.html">Rules</a>
+					</div>
+				</li>
+				<li><a href="index.html" class="active">Home</a></li>
+			</ul>
+		</nav>
+		
+		<div id="hero">
+			<img src="images/tree-top-adventure.jpg" alt="treetop adventure">
+		</div>
+		
+		<main class="grid">
+		
+			<article>
+				<h3>College Afternoons</h3>
+				<img src="images/gvsu.jpg" alt="GVSU logo">
+				<p>Stop by every Thursday at 1:00 for a discouted price for college students!</p>
+				<p>Adventurers that show us a valid student I.D. can get 40% off tickets for the afternoon, allowing access to our treetop courses, ziplines, and trails.</p>
+			</article>
+			
+			<article>
+				<h3>Under the Lights</h3>
+				<img src="images/night-trees.jpg" alt="forest with lanterns">
+				<p>We are open late on Saturday nights for adventures under the lights!</p>
+				<p>Come spend the evening with us for ascending the treetops with lanterns hanging from the branches and with luminescent harnesses. Not open to children under 7.</p>
+			</article>
+			
+			<article>
+				<h3>Birthday Parties</h3>
+				<img src="images/bday-party.jpg" alt="birthday party in the forest">
+				<p>You can book birthday parties with us!</p>
+				<p>We offer adventures for large groups, along with a spot to celebrate with food in the forest! <a href="contact.html">Contact</a> us to book it!</p>
+			</article>
+			
+			<aside id="calendar">
+				<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showTitle=1&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&src=Y19kZDY2NTc3ZThiZjc2NzQ5NjEwYTQ4Yjg2ZmVkYjZhNjc4YTEzMDYxODQzZjAwYWU1Njc1NGNlZmI5MDdkNjMwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%237CB342" style="border:solid 1px #777" width="800" height="600"></iframe>
+			</aside>
+			
+		</main>
+		
+		<footer>
+			<p>&copy; Copyright 2023. All Rights Reserved.</p>
+			<p><a href="mailto:allendaleadventurepark@gmail.com">allendaleadventurepark@gmail.com</a></p>
+		</footer>
+		
+	</div>
+
+</body>
+</html>
